@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="贪吃蛇">
+  <meta name="format-detection" content="telephone=no">
+  <title>贪吃蛇</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell" aria-label="贪吃蛇小游戏">
+    <section class="game-card">
+      <header class="top-bar">
+        <div>
+          <p class="eyebrow">iOS Snake</p>
+          <h1>贪吃蛇</h1>
+        </div>
+        <button class="glass-button restart-button" id="restartButton" type="button">重新开始</button>
+      </header>
+
+      <div class="score-grid" aria-live="polite">
+        <div class="score-pill">
+          <span>得分</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="score-pill">
+          <span>最高分</span>
+          <strong id="bestScore">0</strong>
+        </div>
+        <div class="score-pill">
+          <span>速度</span>
+          <strong id="speedLabel">1x</strong>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <canvas id="gameCanvas" width="420" height="420" aria-label="贪吃蛇游戏区域"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-panel">
+            <p id="overlayTitle">准备开始</p>
+            <span id="overlayText">按方向键、WASD、滑动屏幕或点击方向按钮开始。</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="control-pad" aria-label="方向控制">
+      <button class="glass-control up" type="button" data-direction="up" aria-label="向上">▲</button>
+      <button class="glass-control left" type="button" data-direction="left" aria-label="向左">◀</button>
+      <button class="glass-control right" type="button" data-direction="right" aria-label="向右">▶</button>
+      <button class="glass-control down" type="button" data-direction="down" aria-label="向下">▼</button>
+    </nav>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

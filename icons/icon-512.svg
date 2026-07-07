@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="贪吃蛇图标">
+  <rect width="512" height="512" rx="118" fill="#f6f7fb"/>
+  <path d="M112 326c0-80 64-144 144-144h66c34 0 62-28 62-62s-28-62-62-62H208" fill="none" stroke="#24bd72" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="330" cy="122" r="14" fill="#ffffff"/>
+  <circle cx="390" cy="370" r="46" fill="#ffb340"/>
+  <circle cx="374" cy="354" r="14" fill="#ffffff" opacity=".7"/>
+</svg>
