@@ -1,0 +1,22 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.minghongrui.snake"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.minghongrui.snake"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "snake-${variant.name}.apk"
+        }
+    }
+}
